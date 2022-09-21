@@ -3,3 +3,13 @@ C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\n
 C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.AssemblyInfoInputs.cache
 C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.AssemblyInfo.cs
 C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.csproj.CoreCompileInputs.cache
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\bin\Debug\net6.0\DemoEmployee.exe
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\bin\Debug\net6.0\DemoEmployee.deps.json
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\bin\Debug\net6.0\DemoEmployee.runtimeconfig.json
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\bin\Debug\net6.0\DemoEmployee.dll
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\bin\Debug\net6.0\DemoEmployee.pdb
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.dll
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\refint\DemoEmployee.dll
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.pdb
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\DemoEmployee.genruntimeconfig.cache
+C:\Users\tuan vu\Documents\GitHub\Employee\DemoEmployee\DemoEmployee\obj\Debug\net6.0\ref\DemoEmployee.dll

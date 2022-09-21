@@ -22,7 +22,7 @@ public class Employee
         get => _dob;
         set => _dob = value;
     }
-    public string Address { get;set }
+    public string Address { get; set; }
     public double RateSalary { get;set; }
     public int Manday { get;set; }
     //constructors
@@ -44,8 +44,9 @@ public class Employee
     private double _calcSalary() { return RateSalary * Manday; }
     public double GetSalary() { return this._calcSalary(); }
 
-    public override string ToString() =>$"ID: {Id}, Name: {Name},"+
-        $"Address: {Address}"+$"Salary: {this._calcSalary()}";
+    public override string ToString() =>$" ID: {Id}, Name: {Name},"+
+        $" Address: {Address},"+$" Salary: {this._calcSalary()}"+
+        $" Date: {this.Dob}";
     
 
 }
