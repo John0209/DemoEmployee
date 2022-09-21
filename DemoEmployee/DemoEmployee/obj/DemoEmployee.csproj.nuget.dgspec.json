@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuan vu\\source\\repos\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj": {}
+    "C:\\Users\\tuan vu\\Documents\\GitHub\\Employee\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuan vu\\source\\repos\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj": {
+    "C:\\Users\\tuan vu\\Documents\\GitHub\\Employee\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuan vu\\source\\repos\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj",
+        "projectUniqueName": "C:\\Users\\tuan vu\\Documents\\GitHub\\Employee\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj",
         "projectName": "DemoEmployee",
-        "projectPath": "C:\\Users\\tuan vu\\source\\repos\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj",
+        "projectPath": "C:\\Users\\tuan vu\\Documents\\GitHub\\Employee\\DemoEmployee\\DemoEmployee\\DemoEmployee.csproj",
         "packagesPath": "C:\\Users\\tuan vu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuan vu\\source\\repos\\DemoEmployee\\DemoEmployee\\obj\\",
+        "outputPath": "C:\\Users\\tuan vu\\Documents\\GitHub\\Employee\\DemoEmployee\\DemoEmployee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
