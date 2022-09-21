@@ -1,4 +1,4 @@
-﻿namespace DemoEmployee;
+﻿namespace DemoEmployee.Employees;
 public class Employee
 {
     //field 

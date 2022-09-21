@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoEmployee;
-public static class Number
+namespace DemoEmployee.Number;
+public static class NumberEmployee
 {
     public const int NumberOfEmployee = 10;
 }
