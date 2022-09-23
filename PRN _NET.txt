@@ -1,0 +1,60 @@
+DBI202:
+* Relation: table, 
+--> table x table : relationship
+* CSDL: những data lưu trên máy tính, biểu diễn thông qua
+hàng & cột
+* CTDL: tổ chức và biểu diễn dữ liệu, sử dụng nhiều giải thuật
+cho đến khi giải được bài toán
+=========================================
+- Chú ý nền tảng user use
+. Net frame work Windows Only, Private Source
+. Net Core --> 
+// Core gôm thư viện cần dùng chung vào 1 chỗ
+( Cross_platforms > ghi tren Windows Run được trên EOS,
+ Open Source, Optimize memory )
+. Net 6  -->
+------------
++ Compiler: bôi đen tới đâu chạy chỗ đó, vừa chạy tới đâu
+find error tới đó, JS
++ Intepeeter: tìm lỗi từ đầu đến cuối, C#
+*** Java có cả Compiler & Intepeeter
+------------
+Tham trị: nắm content ko nắm address
+Tham chiếu: nắm address ko nắm content --- ref
+------------ *
+var: declare int, phía sau phải là kiểu đó
+dynamic: thoải mái kiểu nào cũng được
+
+C# cho int = null;
+. có thể cho create many class in file
+C# OOP 
++ Nhược bản cũ: nhìu data dư thừa, program lớn dễ loạn vì có nhìu 
+data xài chung, vẫn có tính đóng gói, data-function để chung 1 class
++ Ưu OOP: giữ data, giải quyết dư thừa, tính đóng gói
+chia ra nhìu class dễ quản lý
+-> Encapsulation: che chi tiết bên trong chỉ show bên ngoài, đóng gói
+để an toàn data
+-> Modifiers: class private
+
++ Internal biến: all code trong assembly đều có thể truy cập
+--> Assembly: Project demoC
++ Protected: chỉ share cho những class con kế thừa
++ Property: ko chứa data, tham chiếu vào Fields, public 
+ra ngoài, public int id
++ Fields: mang giá trị, ko show, chứa đối tượng, private int _id
++ Constructor: Ctrl + . để generate Constructor
+------------ *
+Null-Condition
+a?.x 
+- ?: null or not null
+- ?? : default
+ ( ex int[]arr =null
+   arr?.Length.toString()??"Array is empty" )
+------------ *
+ArrayCoppy (array cần chuyển, chỉ số đầu mún chuyển, mảng nhận, size)
+
+- Virtual: cùng tên phương thức thì overide, khi gọi p.Draw() 
+sẽ gọi p class con
+- có từ khóa NEW, nó sẽ auto lấy của class cha
+
+
