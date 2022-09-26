@@ -1,27 +1,29 @@
-﻿namespace DemoEmployee.Employees;
-public class Employee
-{
-    //field 
-    private int _id;
-    private string _name;
-    private DateTime _dob;
+﻿using DemoEmployee.Per;
 
-    //properties
-    public int Id
-    {
-        get { return _id; }
-        set { _id = value; }
-    }
-    public string Name
-    {
-        get => _name;
-        set => _name = value;
-    }
-    public DateTime Dob
-    {
-        get => _dob;
-        set => _dob = value;
-    }
+namespace DemoEmployee.Employees;
+public class Employee:Person
+{
+//    //field 
+//    private int _id;
+//    private string _name;
+//    private DateTime _dob;
+
+//    //properties
+//    public int Id
+//    {
+//        get { return _id; }
+//        set { _id = value; }
+//    }
+//    public string Name
+//    {
+//        get => _name;
+//        set => _name = value;
+//    }
+//    public DateTime Dob
+//    {
+//        get => _dob;
+//        set => _dob = value;
+//    }
     public string Address { get; set; }
     public double RateSalary { get;set; }
     public int Manday { get;set; }
@@ -42,11 +44,17 @@ public class Employee
     }
     //methods
     private double _calcSalary() { return RateSalary * Manday; }
-    public double GetSalary() { return this._calcSalary(); }
 
-    public override string ToString() =>$" ID: {Id}, Name: {Name},"+
-        $" Address: {Address},"+$" Salary: {this._calcSalary()}"+
-        $" Date: {this.Dob}";
-    
+    public override double getSalary()
+    {
+       return this.Manday * this.RateSalary;
+    }
 
+    public void Print() => Console.WriteLine("Print a Employee");
+
+    public override string Display()
+    => base.Display() + $" Salary: {getSalary()}";
+
+    public override string? ToString()
+    => base.ToString() + $" Salary: {getSalary()}";
 }

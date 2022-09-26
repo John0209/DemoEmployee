@@ -20,8 +20,11 @@ public class Program
         e.RateSalary = 3500;
         e.Address = "HN";
         e.Dob = new DateTime(2000, 2, 18);
+       
         empManager.Add(e);
+
         //print all
+        Console.WriteLine("===================");
         empManager.PrintAllEmployee();
         Console.ReadKey();
     }
