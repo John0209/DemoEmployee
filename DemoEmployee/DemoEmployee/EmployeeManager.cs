@@ -65,5 +65,32 @@ public class EmployeeManager
             }
         }
     }
-
+    // loc nhan vien co tiền lương nhìu nhất
+    public void SortSalary()
+    {
+        Employee[] max=new Employee[1];
+        Employee[] emp=new Employee[this._size*2];
+        Array.Copy (this._emp,0,emp,0,this._size);
+        max[0]=emp[0];
+        
+        for (int i = 1; i < this._size; i++)
+        {
+            try
+            {
+                double maxSalary = max[0].getSalary();
+                double Salary = emp[i].getSalary();
+                if (Salary > maxSalary)
+                {
+                    max[0] = emp[i];
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            
+        }
+        Console.WriteLine("Employee have highest salary");
+        Console.WriteLine(max[0].Display());
+    }
 }

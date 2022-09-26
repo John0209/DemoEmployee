@@ -47,7 +47,7 @@ public class Employee:Person
 
     public override double getSalary()
     {
-       return this.Manday * this.RateSalary;
+       return (this.Manday * this.RateSalary);
     }
 
     public void Print() => Console.WriteLine("Print a Employee");

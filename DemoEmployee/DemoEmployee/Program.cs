@@ -16,7 +16,7 @@ public class Program
         Employee e = new Employee();
         e.Id = 4;
         e.Name = "Huy";
-        e.Manday = 10;
+        e.Manday = 35;
         e.RateSalary = 3500;
         e.Address = "HN";
         e.Dob = new DateTime(2000, 2, 18);
@@ -24,8 +24,9 @@ public class Program
         empManager.Add(e);
 
         //print all
-        Console.WriteLine("===================");
         empManager.PrintAllEmployee();
+        Console.WriteLine("===================");
+        empManager.SortSalary();
         Console.ReadKey();
     }
 }
