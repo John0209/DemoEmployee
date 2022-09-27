@@ -1,7 +1,7 @@
 ﻿using DemoEmployee.Per;
 
 namespace DemoEmployee.Employees;
-public class Employee:Person
+public class Employee:Person, IComparable<Employee>
 {
 //    //field 
 //    private int _id;
@@ -57,4 +57,9 @@ public class Employee:Person
 
     public override string? ToString()
     => base.ToString() + $" Salary: {getSalary()}";
+
+    public int CompareTo(Employee? s)
+    {
+        return (int)(this._calcSalary() - s._calcSalary());
+    }
 }

@@ -1,11 +1,14 @@
 ﻿using DemoEmployee.Employees;
 using DemoEmployee.Manager;
+using DemoEmployee.Per;
+using Generic.ExtensionsFuctional;
+
 namespace DemoEmployee.program;
 public class Program
 {
     public static void Main()
     {
-        Employee[] employee = new Employee[]
+        List<Employee> employee = new List<Employee>()
         {
             new Employee(1,"Hùng",new DateTime(1989,12,2),"HCM",3500,30),
             new Employee(2,"Hào",new DateTime(1929,10,11),"HCM",3500,12),
@@ -22,10 +25,13 @@ public class Program
         e.Dob = new DateTime(2000, 2, 18);
        
         empManager.Add(e);
-
+        //thuc thi sap xep
+        employee.Sort();
         //print all
+
         Console.WriteLine("===================");
-        empManager.Display();
+        empManager.DisplayPerson(employee);
+        
         Console.ReadKey();
     }
 }

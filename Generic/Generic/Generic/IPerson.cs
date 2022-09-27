@@ -1,4 +1,6 @@
-﻿using DemoEmployee.Per;
+﻿using DemoEmployee.Employees;
+using DemoEmployee.Per;
+using Generic.Student;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +9,12 @@ using System.Threading.Tasks;
 
 namespace DemoEmployee.Repository;
 
-public interface IPerson
+public interface IPerson<P> where P : Employee, new()
 {
-    Person[] GetAll();
-    void Display();
-    void Add(Person p);
-    void Update(Person p);  
-    Person GetbyId(int id);
-    void Delete(Person p);
+    List<P> GetAll();
+    void Add(P p);
+    void Update(P p);  
+   P GetbyId(int id);
+    void Delete(P p);
 
 }

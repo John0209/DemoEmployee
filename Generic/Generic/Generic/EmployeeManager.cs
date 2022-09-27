@@ -11,63 +11,46 @@ using DemoEmployee.Repository;
 namespace DemoEmployee.Manager;
 using static System.Console;
 
-public class EmployeeManager:IPerson
+public class EmployeeManager: IPerson<Employee>
 {
     //co 1 mang chua cac employee
-    private Person[] _emp;
+    private List<Employee> _emp;
     private int _size;
     //not understand
     public EmployeeManager()
     {
-        this._emp=new Employee[NumberEmployee.NumberOfEmployee];
+        this._emp=new List<Employee>();
         this._size= default(int);// default int = 7;
     }
-    public EmployeeManager(Person[] emp)
+    public EmployeeManager(List<Employee> emp)
     {
         _emp = emp;
-        _size=emp.Length;
     }
     // not understand
-    public Person[] employee => _emp;
+    public List<Employee> employee => _emp;
 
-    public void Add(Person e)
+    public void Add(Employee e)
     {
-        // check xem array co bị đầy hay ko
-        if (this._size >= _emp.Length)
-        {
-            // nối mảng dài ra
-            Person[] newEmp = new Employee[this._size * 2];
-            // coppy mảng emp qua mảng newEmp
-            Array.Copy(this._emp, 0, newEmp,0,this._size);
-            this._emp = newEmp;
-        }
-        this._emp[this._size++]=e;
-
+        this._emp.Add(e);
     }
-    public void Update(Person e)
+    public void Update(Employee e)
     {
 
     }
-    public void Delete(Person e)
+    public void Delete(Employee e)
     {
 
     }
     
 
-    public Person[] GetAll()
+    public List<Employee> GetAll()
     {
         return this._emp;
     }
 
-    public void Display()
-    {
-        foreach(Person p in this._emp)
-        {
-            Console.WriteLine(p);
-        }
-    }
+    
 
-    public Person GetbyId(int id)
+    public Employee GetbyId(int id)
     {
         throw new NotImplementedException();
     }
