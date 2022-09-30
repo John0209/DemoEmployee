@@ -60,6 +60,6 @@ public class Employee:Person, IComparable<Employee>
 
     public int CompareTo(Employee? s)
     {
-        return (int)(this._calcSalary() - s._calcSalary());
+        return (int)(  s._calcSalary()- this._calcSalary());
     }
 }

@@ -13,6 +13,17 @@ cho đến khi giải được bài toán
 ( Cross_platforms > ghi tren Windows Run được trên EOS,
  Open Source, Optimize memory )
 . Net 6  -->
+=========================================
+- Lệnh cơ bản
++ Biến:
+. Là 1 giá trị có thể thay đổi được
+. là tên gọi tham chiếu	đến 1 vùng nhớ nào đó trong bộ nhớ
+. là thành phần cốt lõi của 1 ngôn ngữ lập trình
+=> why ? 
+. Save date and tái sử dụng
+. thao tác với bộ nhớ 1 cách dễ dàng, địa chỉ ô nhớ thường là hexa
+--> tên biến ko chứa ký tự đặc biệt và có khoảng trắng
+--> ko được start bằng số, ko trùng vs từ khóa
 ------------
 + Compiler: bôi đen tới đâu chạy chỗ đó, vừa chạy tới đâu
 find error tới đó, JS
@@ -52,38 +63,22 @@ a?.x
    arr?.Length.toString()??"Array is empty" )
 ------------ *
 ArrayCoppy (array cần chuyển, chỉ số đầu mún chuyển, mảng nhận, size)
-===== Abstract
+
 - Virtual: cùng tên phương thức thì overide, khi gọi p.Draw() 
 sẽ gọi p class con
 - có từ khóa NEW, nó sẽ auto lấy của class cha
-- nếu k có gì thì nó sẽ gọi thằng khai báo
-===== Interface
-- function có static thì k thể gọi trực típ từ class con
------------ *
-IS : check
-As : gán
-------------*
 
-- Constructor Static tĩnh chỉ gọi 1 lần duy nhất, lần thứ 2 sẽ gọi lại
-- Class static thì ko all function là Static
-------------*
+------------ *
+- Generics: định nghĩa 1 class or interface or function chấp nhận
+kiểu data T nhưng chưa bit T là gì, T được truyền khi runtime
+- Collection là 1 tập các đối tượng, C# cung cấp 1 loạt interface
+cho user
 
-Extention: add 1 method vào 1 method đã có sẵn, ví dụ add 1 method vào interface
-- điều kiện: 
-+ có this ở first parameter
-+ in trong class static
+------------ *
+- Delegates: là 1 con trỏ, trỏ đến 1 hàm và nắm địa chỉa hàm đó
+ . nó là kiểu ngang bằng vs class
+ . Giúp truyền hàm này vào hàm khác như truyền tham số
 
-Anonymus Type:
-- save memory, k cần khai báo classs, k cần use constructor
-- obj= new {parameter, parameter}; -> obj. parameter
-- exp: var obj1 =new {id=1000};
--> CW($"id:{ojb.id}");
-Object Initialize
-- Before
- + Customer c= new Customer();
- c.Name="Jack";
- c.Age=20;
-- After
- + var c = new Customer(){Name="Jack", Age=20}
+- Anonymous MEthod: 
 
 
