@@ -10,11 +10,16 @@
   <ItemGroup>
     <Compile Remove="delegate.cs" />
     <Compile Remove="Event.cs" />
+    <Compile Remove="Event_Donet.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="delegate.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Event.cs" />
+    <None Include="Event_Donet.cs" />
   </ItemGroup>
 
 </Project>
